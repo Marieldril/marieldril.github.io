@@ -1,30 +1,145 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Mrdrl</h1>
-		<?php 
-    
-		// Define the URL and data 
-		$url = 'https://ptb.discord.com/api/webhooks/1248698105113739358/gYg3IPCnSxDUeOE9DW2_TbQhhkWCdKafNxIMA6rnLIiz7cvbkBXhB5pzu1EPhIHUDzYw'; 
-		  
-		// Prepare POST data 
-		$options = [ 
-			'http' => [ 
-				'method'  => 'POST', 
-				'header'  => 'Content-type: application/x-www-form-urlencoded', 
-				'content' => 'test', 
-			], 
-		]; 
-		  
-		// Create stream context 
-		$context  = stream_context_create($options); 
-		  
-		// Perform POST request 
-		$response = file_get_contents($url, false, $context); 
-		  
-		// Display the response 
-		echo $response; 
-		  
-		?>
-	</body>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przykład z Cascadia Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section0">Sekcja 0</a></li>
+                <li><a href="#section1">Sekcja 1</a></li>
+                <li><a href="#section2">Sekcja 2</a></li>
+                <li><a href="#section3">Sekcja 3</a></li>
+                <li><a href="#section4">Sekcja 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section0" class="hidden">
+        <div class="content">
+            <div class="lower-part">
+                <div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>3 słowa o mnie</h2>
+                    <p>Jeden, dwa, trzy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section1" class="hidden">
+        <div class="content">
+            <div class="upper-part">
+                <div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>Wszyscy kochamy statystyki</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+            <div class="lower-part">
+			<div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>Nieoczywiste zastosowania</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section id="section2" class="hidden">
+        <div class="content">
+            <div class="upper-part">
+                <div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>WPF I MAUI</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+            <div class="lower-part">
+			<div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>WPF I MAUI</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3" class="hidden">
+        <div class="content">
+            <div class="upper-part">
+                <div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>Unity</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+            <div class="lower-part">
+			<div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>VR</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section id="section4" class="hidden">
+        <div class="content">
+            <div class="upper-part">
+                <div class="image">
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                </div>
+                <div class="text">
+                    <h2>Co czas pokaże</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat interdum justo sed condimentum. Ut leo justo, accumsan nec rutrum sed, tempor eget diam. Fusce vel odio tincidunt, scelerisque metus quis, ornare purus. Praesent odio ipsum, facilisis non lacus ac, rhoncus mollis augue. Curabitur finibus erat in augue tincidunt fringilla. Integer tristique eget velit tempus fringilla. Mauris quis arcu mattis, malesuada lectus nec, scelerisque urna. Mauris eu efficitur ligula. Aenean a sodales nibh.
+
+Aliquam laoreet ullamcorper ante, at pulvinar nunc bibendum in. Cras pharetra ut velit et ultrices. Duis congue diam a condimentum porttitor. Vestibulum non erat sed nulla tempus pulvinar. Ut imperdiet, ex eget accumsan tempus, velit purus molestie lacus, ac accumsan turpis tellus tristique nibh. Nunc nec rutrum leo. Nullam congue cursus ante, non tincidunt lorem tempor non. Ut interdum vitae quam sed iaculis.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section social">
+                <h2>Discord</h2>
+                <a href="#"><img src="path/to/discord.png" alt="Discord" width="32" height="32"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Stworzono przy pomocy AI | Aktualizacja: 11.06.2024
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
