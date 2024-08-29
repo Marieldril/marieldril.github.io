@@ -31,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #BB86FC;
+    color: #2BD2FF;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -70,7 +70,7 @@ section .content .lower-part {
 
 section .content .upper-part {
     flex-direction: row-reverse;
-	text-align: right;
+	text-align: left;
 }
 
 section .content .image,
@@ -153,52 +153,4 @@ footer {
     margin-top: 2em;
     font-size: 0.8em;
     color: #E0E0E0;
-}
-
-/* Responsywne dostosowanie */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
-    }
-
-    section {
-        padding: 6em 1em;
-    }
-
-    section .content {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    section .content.reverse {
-        flex-direction: column-reverse;
-    }
-
-    section .content .image,
-    section .content .text {
-        padding: 0;
-        width: 100%;
-    }
-
-    section .content .text {
-        margin-top: 1em;
-        font-size: 1em; /* Zmniejszono rozmiar tekstu na mniejszych ekranach */
-    }
-
-    section .content .text h2 {
-        font-size: 1.5em; /* Zmniejszono rozmiar nagłówka na mniejszych ekranach */
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin-bottom: 2em;
-    }
 }
