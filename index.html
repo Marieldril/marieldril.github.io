@@ -1,101 +1,62 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marieldril</title>
+    <title>Marieldril - Page Under Construction</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: block;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #00fff0;
+            animation: spin 1s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #00fff0;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #aaaaaa;
+            line-height: 1.6;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#section0">O mnie</a></li>
-                <li><a href="#section1">Unity</a></li>
-                <li><a href="#section2">C#</a></li>
-                <li><a href="#section3">Boty Discord</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="section0" class="hidden">
-        <div class="content">
-            <div class="lower-part">
-                <div class="text">
-                    <h2>O mnie</h2>
-                    <p>Od ponad 4 lat zajmuję się tworzeniem symulatorów i gier w silniku Unity, prywatnie tworzę boty na serwery discord oraz aplikacje desktopowe.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="section1" class="hidden">
-        <div class="content">
-            <div class="upper-part">
-                <div class="image">
-                    <img src="images/unity.png" alt="Unity logo">
-                </div>
-                <div class="text">
-                    <h2>Unity</h2>
-                    <p>W unity tworzę od ponad 6 lat, profesjonalnie od 4. Tworzę głównie gry i symulatory na system Windows. Tworzę również narzędzia do edytora na prywatny użytek, korzystam na co dzień z oficjalnych assetów Unity (Addressables, Localization, etc.) aby jakość aplikacji była na najwyższym poziomie. Piszę shadery aby jak najbardziej podnieść wydajność, co jest istotne w aplikacjach VR.</p>
-                </div>
-            </div>
-            <div class="lower-part">
-			<div class="image">
-                    <img src="images/cables.gif" alt="fizyka kabli">
-                </div>
-                <div class="text">
-                    <h2>VR</h2>
-                    <p>Na VR stworzyłem swoją pierwszą aplikację w trakcie stażu w firmie VRTechnology, gdzie samodzielnie opracowałem fizykę kabli. Pracowałem z paczką steam i pisałem optymalne shadery pod wykorzystanie VR.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-	<section id="section2" class="hidden">
-        <div class="content">
-            <div class="upper-part">
-                <div class="image">
-                    <img src="images/drawing_of_a_key.png" alt="Placeholder Image">
-                </div>
-                <div class="text">
-                    <h2>WPF I MAUI</h2>
-					<p>Pracuję głównie w języku C#, choć znam też python, C++, Java. Wybrałem C# ze względu na szerokie wykorzystanie i wsparcie. Napisałem w WPF .NET własny menadżer haseł oparty na obrazach zamiast na standardowym ciągu znaków. Oczywiście inspiracją do tego była scena z filmu "Piraci z Karaibów: Skrzynia umarlaka" :)</p>
-                </div>
-            </div>
-            <div class="lower-part">
-			<div class="image">
-                    <img src="images/maui.png" style="width: 80%; text-align: center" alt="Placeholder Image">
-                </div>
-                <div class="text">
-                    <h2>WPF I MAUI</h2>
-                    <p>Najnowsze projekty tworzę w Maui.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="section3" class="hidden">
-        <div class="content">
-            <div class="upper-part">
-                <div class="image">
-                    <img src="images/discord.png" alt="Placeholder Image">
-                </div>
-                <div class="text">
-                    <h2>Discord</h2>
-                    <p>W wolnym czasie piszę boty na serwery społeczności, oferują one standardowe komendy moderacji, puszczanie muzyki, a także statystyki dla każdego użytkownika. W przyszłości chcę pobawić się z połączeniem AI.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <div class="spinner"></div>
+        <h1>Page Under Construction</h1>
+        <p>We are currently working on a new version of our website. Please check back soon.</p>
+    </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section social">
-            </div>
-        </div>
-        <div class="footer-bottom">
-            Marieldril
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
